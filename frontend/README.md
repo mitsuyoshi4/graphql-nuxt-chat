@@ -1,4 +1,4 @@
-# buefy
+# GraphQLChat
 
 > My badass Nuxt.js project
 
