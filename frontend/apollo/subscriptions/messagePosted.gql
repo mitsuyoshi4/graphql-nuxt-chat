@@ -1,0 +1,8 @@
+subscription($user: String!){
+  messagePosted(user: $user){
+    id
+    user
+    createdAt
+    text
+  }
+}
