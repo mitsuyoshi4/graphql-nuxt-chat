@@ -1,6 +1,7 @@
 # GraphQLChat
 
-> My badass Nuxt.js project
+> GraphQLChat
+> Used GraphQL Subscrption over Websocket
 
 ## Build Setup
 
