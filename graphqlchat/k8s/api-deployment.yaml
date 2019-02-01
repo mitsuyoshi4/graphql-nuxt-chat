@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api
+        image: localhost:5000/mitsuyoshi4/graphql-chat:v1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: REDIS_URL
+          value: redis-service.default:6379
+        - name: PORT
+          value: "8080"
